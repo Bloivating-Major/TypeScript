@@ -127,3 +127,12 @@
 // }
 
 // let u1 = new User("Sambhav", 20);
+
+// Static Members
+// class Shery{
+//     static version = 1.0;
+
+//     static getRandom(){
+//         return (Math.random()*100).toFixed(2);
+//     }
+// }

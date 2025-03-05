@@ -53,16 +53,21 @@
 // }
 // let b1 = new MetalBottleMaker("milton");
 // b1.getValue();
-// class BottleMaker {
-//    protected name = "Sambhav";
-// }
-// class MetalBottleMaker extends BottleMaker {
-//     public meterial = "metal";
-//     changeName(){
-//         this.name = "Some other Name";
-//     }
-// }
-// let b1 = new MetalBottleMaker();
+class BottleMaker {
+    constructor() {
+        this.name = "Sambhav";
+    }
+}
+class MetalBottleMaker extends BottleMaker {
+    constructor() {
+        super(...arguments);
+        this.meterial = "metal";
+    }
+    changeName() {
+        this.name = "Some other Name";
+    }
+}
+let b1 = new MetalBottleMaker();
 // class User{
 //     constructor (public readonly name : string){}
 //     changeName(){
@@ -92,3 +97,10 @@
 //     }
 // }
 // let u1 = new User("Sambhav", 20);
+// Static Members
+// class Shery{
+//     static version = 1.0;
+//     static getRandom(){
+//         return (Math.random()*100).toFixed(2);
+//     }
+// }
